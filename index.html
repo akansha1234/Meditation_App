@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Meditation App</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="../src/styles.css"/>
+</head>
+
+<body>
+	<div id="app">
+		<div class="vid-container">
+			<video loop>
+				<source src="../src/video/rain.mp4">
+			</video>
+		</div>
+		<div class="timer">
+			<button data-time= "120" class="btn"> 2 Minutes </buton>
+				<button data-time= "300" class="btn"> 5 Minutes </buton>
+					<button data-time= "600" class="btn"> 10 Minutes </buton>
+		</div>
+		<div class="middle">
+			<audio class="song">
+				<source src="../src/sound/rain.mp3" crossOrigin="anonymous">
+			</audio>
+			<img src="../src/svg/play.svg" class="play-btn"/>
+			<svg width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg" class="circle1">
+				<circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+				</svg>
+				<svg width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg" class="circle2">
+					<circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+					</svg>
+			<p id="time-result">0:00</p>
+		</div>
+		<!-- <div class="last">
+			<button data-sound="../src/svg/sound/rain.mp3" data-video = "../src/video/rain.mp4" class="sound-picker"><img src="../src/svg/rain.svg" /></button>
+			<button data-sound="../src/svg/sound/beach.mp3" data-video = "../src/video/beach.mp4" class="sound-picker"><img src="../src/svg/beach.svg"/></button>
+		</div> -->
+	</div>
+
+	<script src="src/index.js">
+	</script>
+</body>
+
+</html>

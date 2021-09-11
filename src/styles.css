@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#app {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+.btn,
+.last button {
+  background: none;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  height: 10%;
+  width: 30%;
+  transition: all 0.2 ease;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+.middle {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  position: relative;
+}
+.middle svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+#time-result {
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  font-size: 50px;
+}
+
+video {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  min-width: 100%;
+  z-index: -10;
+  min-height: 100vh;
+  display: block;
+  margin: auto;
+}
